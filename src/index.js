@@ -13,7 +13,7 @@ const store = createStore(rootReducer, applyMiddleware(thunk));
 ReactDOM.render(
   <React.StrictMode>
     <Provider store={store}>
-      <BrowserRouter>
+      <BrowserRouter basename="/burger-builder/">
         <App />
       </BrowserRouter>
     </Provider>
